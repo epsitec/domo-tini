@@ -1,0 +1,44 @@
+﻿# FTP 192.168.1.88 / root / tini
+# "put script.txt" pour mettre � jour le script qui sera relu � minuit
+# Toutes les indications ici en heures d'�t�
+
+# 0  : WC rez
+# 1  : entr�e, ext�rieur
+# 2  : salle � manger
+# 3  : salon
+# 4  : chambre sud
+# 5  : escaliers, �tage
+# 6  : hall, rez
+# 7  : chambre, nord
+# 8  : --
+# 9  : --
+# 10 : --
+# 11 : cuisine
+# 12 : cuisine, spots
+# 13 : �tage, entr�e bureau
+# 14 : bureau c�t� Sylvie
+# 15 : bureau c�t� Pierre
+
+# Commandes reconnues :
+# hhmmss on/off x
+# hhmmss open-shutters/close-shutters/shadow-shutters/light-shutters
+# hhmmss open-velux/close-velux
+
+020000 off 1
+
+-- 070000 on 2
+-- 073000 off 2
+
+-- 074500 on 4
+-- 074530 off 4
+
+074500 open-shutters
+082000 open-velux
+
+184000 close-shutters
+184100 on 3
+184200 close-velux
+184300 on 13
+
+212000 off 3
+221000 off 13
